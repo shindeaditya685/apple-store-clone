@@ -25,7 +25,7 @@ export default function ImageSlider() {
       )}
       <div className="  overflow-hidden w-full relative">
         <div
-          className="flex gap-6 transition-transform duration-500"
+          className="flex overflow-x-auto hideScroll gap-6 transition-transform duration-500"
           style={{ transform: `translateX(-${currentSlide * 12.5}%)` }} // Adjust for smooth scrolling
         >
           {imageSlider.map((item, index) => (
