@@ -59,7 +59,7 @@ export default function SmallCardsSection() {
       )}
       <div ref={cardContainerRef} className="overflow-hidden w-full relative">
         <div
-          className="flex mt-6 mb-4 gap-6 transition-transform duration-500"
+          className="flex overflow-x-auto hideScroll mt-6 mb-4 gap-6 transition-transform duration-500"
           style={{
             transform: `translateX(-${currentSlide * cardWidth}px)`,
           }}
