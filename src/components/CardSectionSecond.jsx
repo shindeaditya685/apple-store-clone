@@ -58,7 +58,7 @@ export default function CardSectionSecond() {
       )}
       <div ref={cardContainerRef} className="overflow-hidden w-full relative">
         <div
-          className="flex mt-6 mb-4 gap-6 transition-transform duration-500"
+          className="flex overflow-x-auto hideScroll  gap-6 transition-transform duration-500"
           style={{
             transform: `translateX(-${currentSlide * cardWidth}px)`,
           }}
@@ -66,7 +66,7 @@ export default function CardSectionSecond() {
           {cardSectionTwo.map((item, index) => (
             <div
               key={index}
-              className="cursor-pointer relative shadow-md lg:w-[480px]  lg:h-[500px] w-[300px] h-[450px] aspect-w-12 aspect-h-10 transition-transform duration-300 flex-shrink-0 hover:scale-105 hover:rounded-xl overflow-hidden"
+              className="cursor-pointer relative mt-6 mb-4 shadow-md lg:w-[480px]  lg:h-[500px] w-[300px] h-[450px] aspect-w-12 aspect-h-10 transition-transform duration-300 flex-shrink-0 hover:scale-105 hover:rounded-xl overflow-hidden"
             >
               <img
                 className="w-full h-full block object-cover rounded-xl shadow-xl"
